@@ -12,6 +12,11 @@ $(document).ready(function(){
 	$(".fullscreen").css("height", window_height)
 	$(".fitscreen").css("height", fitscreen);
 
+  document.body.classList.add('show');
+  // document.addEventListener("DOMContentLoaded", function(e) {
+  //   document.body.classList.remove('fade');
+  // });
+
   //-------- Active Sticky Js ----------//
   $(".default-header").sticky({topSpacing:0});
 
@@ -84,60 +89,60 @@ $(document).ready(function(){
     });
 
 
-    $(document).ready(function() {
+  //   $(document).ready(function() {
 
-      $('html').addClass('js-enabled');
+  //     $('html').addClass('js-enabled');
   
      
-      $(window).load(function() {
-          $(".js-preloader").fadeOut(800, function() {
-              $(".js-main-container").fadeIn(800);
+  //     $(window).load(function() {
+  //         $(".js-preloader").fadeOut(800, function() {
+  //             $(".js-main-container").fadeIn(800);
   
-              setup_scrollreveal();
-              setup_progress_bar_animation();
-          });
-      });
+  //             // setup_scrollreveal();
+  //             setup_progress_bar_animation();
+  //         });
+  //     });
   
-  });
+  // });
   
   
   
-  function setup_progress_bar_animation()
-  {
-      var $animation_elements = $("[class*='a-']");
-      var $window = $(window);
+  // function setup_progress_bar_animation()
+  // {
+  //     var $animation_elements = $("[class*='a-']");
+  //     var $window = $(window);
   
-      $window.on('scroll resize', function() {
-          var window_height = $window.height();
-          var window_top_position = $window.scrollTop();
-          var window_bottom_position = (window_top_position + window_height);
+  //     $window.on('scroll resize', function() {
+  //         var window_height = $window.height();
+  //         var window_top_position = $window.scrollTop();
+  //         var window_bottom_position = (window_top_position + window_height);
   
-          $.each($animation_elements, function() {
-              var $element = $(this);
-              var element_height = $element.outerHeight();
-              var element_top_position = $element.offset().top;
-              var element_bottom_position = (element_top_position + element_height);
+  //         $.each($animation_elements, function() {
+  //             var $element = $(this);
+  //             var element_height = $element.outerHeight();
+  //             var element_top_position = $element.offset().top;
+  //             var element_bottom_position = (element_top_position + element_height);
   
-              // Check to see if this current container is within viewport
-              if ((element_bottom_position >= window_top_position) &&
-                  (element_top_position <= window_bottom_position)) {
-                  $element.addClass('in-view');
+  //             // Check to see if this current container is within viewport
+  //             if ((element_bottom_position >= window_top_position) &&
+  //                 (element_top_position <= window_bottom_position)) {
+  //                 $element.addClass('in-view');
   
-                  // Animate progress bar
-                  if ($element.hasClass('a-progress-bar')) {
-                      $element.css('width', $element.attr('data-percent') + '%');
-                  }
+  //                 // Animate progress bar
+  //                 if ($element.hasClass('a-progress-bar')) {
+  //                     $element.css('width', $element.attr('data-percent') + '%');
+  //                 }
   
-              }
-              //else {
-              //    $element.removeClass('in-view');
-              //}
-          });
-      });
+  //             }
+  //             //else {
+  //             //    $element.removeClass('in-view');
+  //             //}
+  //         });
+  //     });
   
-      $window.trigger('scroll');
+  //     $window.trigger('scroll');
   
-  }
+  // }
   
 
 
