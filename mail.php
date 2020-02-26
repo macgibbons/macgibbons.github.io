@@ -1,8 +1,8 @@
 <?php
     $to = 'macgibbons@gmail.com';
-    $name = $_GET['name'];
-    $email= $_GET['email'];
-    $text= $_GET['message'];
+    $name = $_POST['name'];
+    $email= $_POST['email'];
+    $text= $_POST['message'];
  
     
 
@@ -21,7 +21,9 @@
         
     </table>';
 
-    mail($to, $email, $message, $headers)
+    mail($to, $email, $message, $headers);
+
+    echo 'The message has been sent.';
     
 
     // if (@mail($to, $email, $message, $headers))
