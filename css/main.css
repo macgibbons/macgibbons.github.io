@@ -2209,9 +2209,30 @@ h1, h2, h3, h4, h5, h6 {
 .resume-btn {
   margin: auto; 
 }
+.icon-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.icon {
+  max-width: 110px;
+  margin: 25px;
+  margin-bottom: 100px;
+  flex-basis: 20%;
+  max-height: 110px;
+}
+
+@media (max-width: 600px) {
+  .icon {
+    max-width: 70px;
+    margin: 15px
+  }
+}
 
 .single-service .icon {
   margin-right: 40px;
+  max-width: 100px;
 }
 
 .single-service a {
