@@ -2135,6 +2135,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-size: 36px;
   line-height: 1em;
+  margin-top: 300px;
+  margin-left: 100px;
   margin-bottom: 40px;
 }
 
@@ -2173,7 +2175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner-right {
-  margin-top: 100px;
+  margin-top: 700px;
 }
 
 @media (max-width: 800px) {
