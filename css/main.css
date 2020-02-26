@@ -2206,6 +2206,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.resume-btn {
+  margin: auto; 
+}
+
 .single-service .icon {
   margin-right: 40px;
 }
@@ -2219,7 +2223,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 100px; 
 }
 
+.desc {
+  padding-top: 20px;
+}
 
+.desc a {
+  text-align: center;
+  margin: 30%;
+  line-height: 4;
+}
+
+.lnr-envelope{
+  margin-bottom: 20px;
+}
 .myself-wrap {
   background-color: #fff;
   display: inline-block;
