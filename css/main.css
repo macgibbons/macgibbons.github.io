@@ -114,6 +114,16 @@ a, a:focus, a:hover {
 .gray-bg {
   background: #f9f9ff;
 }
+@font-face {
+  font-family: WorkSans-Bold;
+  src: url(../fonts/WorkSans-Bold.ttf) 
+}
+@font-face {
+  font-family: WorkSans-ExtraBold;
+  src: url(../fonts/WorkSans-ExtraBold.ttf) 
+}
+
+
 
 h1, h2, h3,
 h4, h5, h6 {
@@ -2175,6 +2185,20 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .banner-left {
     text-align: center;
+    width: 500px;
+  }
+
+  .banner-left h1 {
+    width: 500px;
+  }
+
+  .banner-left a {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+  }
+  .banner-area  .fullscreen{
+    height: 700px !important;
   }
 }
 
@@ -2210,7 +2234,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 414px) {
   .banner-left h1 {
-    font-size: 40px;
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .banner-left a {
+    display: none;
+  }
+  .banner-left img {
+    width: 10%;
   }
 }
 
@@ -2292,7 +2324,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .landing-content{
   margin-top: 300px;
-  margin-left: 100px; 
+  /* margin-left: 100px;  */
+}
+
+@media (max-width: 1000px) {
+  .landing-content{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: none !important;
+    width: 100%;
+  }
+
+  
 }
 
 .desc {
